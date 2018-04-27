@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="49.0" prefWidth="386.0" style="-fx-background-color: #07131c;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="51.0" prefWidth="386.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="52.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets top="9.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@icons/user_azul.png" />
+                     </image>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="52.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/location_azul.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="9.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="52.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/education_azul.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="9.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fitHeight="52.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/logout_azul.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="9.0" top="9.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="20.0" layoutY="94.0" prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-sx-text-field: #6b6b6b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXTextField focusColor="#11eb48" layoutX="81.0" layoutY="18.0" promptText="Ingrese nombre" unFocusColor="#6b6b6b" />
+            <JFXTextField focusColor="#11eb48" layoutX="94.0" layoutY="53.0" promptText="Ingrese apellidos" unFocusColor="#6b6b6b" />
+            <JFXTextField focusColor="#11eb48" layoutX="127.0" layoutY="93.0" promptText="Ingrese identificación" unFocusColor="#6b6b6b" />
+            <Label layoutX="19.0" layoutY="32.0" text="NOMBRE:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="67.0" text="APELLIDOS:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="107.0" text="IDENTIFICACIÓN:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="62.0" layoutY="148.0" prefHeight="3.0" prefWidth="262.0" />
+            <Label layoutX="19.0" layoutY="165.0" text="ESTADO CIVIL:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="207.0" text="GENERO:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXComboBox focusColor="#11eb48" layoutX="126.0" layoutY="160.0" prefHeight="28.0" prefWidth="104.0" promptText="Seleccione" unFocusColor="#979696" />
+            <JFXRadioButton layoutX="96.0" layoutY="207.0" text="Masculino" textFill="#06f248" />
+            <JFXRadioButton layoutX="230.0" layoutY="207.0" text="Femenino" textFill="#06f248" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="56.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/flecha_arriva_azul.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="139.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@icons/flecha_arriva_azul.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="221.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@icons/flecha_arriva_azul.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="304.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@icons/flecha_arriva_azul.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

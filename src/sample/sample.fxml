@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
@@ -11,7 +14,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -60,8 +62,29 @@
             </HBox>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="20.0" layoutY="94.0" prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-sx-text-field: #6b6b6b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane layoutX="20.0" layoutY="94.0" prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="RESIDENCIA" />
+            <Separator layoutX="100.0" layoutY="22.0" opacity="0.29" prefHeight="3.0" prefWidth="254.0" />
+            <Label layoutX="19.0" layoutY="41.0" text="PAIS:" textFill="WHITE" />
+            <ComboBox layoutX="89.0" layoutY="35.0" prefHeight="28.0" prefWidth="179.0" promptText="Seleccione su pais" />
+            <Label layoutX="19.0" layoutY="81.0" text="ESTADO:" textFill="WHITE" />
+            <ComboBox layoutX="89.0" layoutY="75.0" prefHeight="28.0" prefWidth="179.0" promptText="Seleccione su estado" />
+            <Label layoutX="20.0" layoutY="124.0" text="CIUDAD:" textFill="WHITE" />
+            <ComboBox layoutX="89.0" layoutY="118.0" prefHeight="28.0" prefWidth="179.0" promptText="Seleccione su ciudad" />
+            <Separator layoutX="14.0" layoutY="166.0" opacity="0.29" prefHeight="3.0" prefWidth="278.0" />
+            <Label layoutX="302.0" layoutY="158.0" text="CONTACTO" />
+            <Label layoutX="20.0" layoutY="185.0" text="DIRECCION:" textFill="WHITE" />
+            <JFXTextField layoutX="106.0" layoutY="180.0" promptText="Escriba su direccion" />
+            <Label layoutX="17.0" layoutY="222.0" text="TEL 1:" textFill="WHITE" />
+            <JFXTextField layoutX="57.0" layoutY="217.0" prefHeight="28.0" prefWidth="127.0" promptText="Telefono casa" />
+            <Label layoutX="193.0" layoutY="222.0" text="TEL 2:" textFill="WHITE" />
+            <JFXTextField layoutX="233.0" layoutY="217.0" prefHeight="28.0" prefWidth="138.0" promptText="Telefono recados" />
+            <Label layoutX="17.0" layoutY="261.0" text="CELULAR:" textFill="WHITE" />
+            <JFXTextField layoutX="89.0" layoutY="256.0" prefHeight="28.0" prefWidth="32.0" promptText="+--" />
+            <JFXTextField layoutX="130.0" layoutY="256.0" promptText="Numero celular" />
+         </children></AnchorPane>
+      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-sx-text-field: #6b6b6b;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <JFXTextField focusColor="#11eb48" layoutX="81.0" layoutY="18.0" promptText="Ingrese nombre" unFocusColor="#6b6b6b" />
             <JFXTextField focusColor="#11eb48" layoutX="94.0" layoutY="53.0" promptText="Ingrese apellidos" unFocusColor="#6b6b6b" />
@@ -97,7 +120,21 @@
             <JFXRadioButton layoutX="230.0" layoutY="207.0" text="Femenino" textFill="#06f248" />
          </children>
       </AnchorPane>
-      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="56.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="INFORMACION ACADEMICA" />
+            <Separator layoutX="193.0" layoutY="22.0" opacity="0.21" prefHeight="3.0" prefWidth="170.0" />
+            <Label layoutX="20.0" layoutY="49.0" text="NIVEL ACADEMICO:" textFill="WHITE" />
+            <ComboBox layoutX="149.0" layoutY="44.0" prefWidth="150.0" promptText="Seleccione nivel" />
+            <Label layoutX="20.0" layoutY="90.0" text="TITULO:" textFill="WHITE" />
+            <JFXTextField layoutX="151.0" layoutY="85.0" />
+            <JFXToggleButton layoutX="99.0" layoutY="119.0" text="Estudiante" />
+            <Separator layoutX="14.0" layoutY="178.0" opacity="0.21" prefHeight="3.0" prefWidth="284.0" />
+            <Label layoutX="306.0" layoutY="170.0" text="INTERESES" />
+            <JFXCheckBox layoutX="26.0" layoutY="188.0" text="Americano" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="56.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@icons/flecha_arriva_azul.png" />
          </image>
@@ -107,7 +144,7 @@
             <Image url="@icons/flecha_arriva_azul.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="221.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="221.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@icons/flecha_arriva_azul.png" />
          </image>

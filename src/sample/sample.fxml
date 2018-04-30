@@ -15,14 +15,14 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <AnchorPane prefHeight="49.0" prefWidth="386.0" style="-fx-background-color: #07131c;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <HBox prefHeight="51.0" prefWidth="386.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <Separator prefWidth="200.0" visible="false" />
-                  <ImageView fitHeight="52.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="52.0" fitWidth="32.0" onMouseClicked="#usuarioAplicacionBoton" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
                         <Insets top="9.0" />
                      </HBox.margin>
@@ -31,7 +31,7 @@
                      </image>
                   </ImageView>
                   <Separator prefWidth="200.0" visible="false" />
-                  <ImageView fitHeight="52.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="52.0" fitWidth="32.0" onMouseClicked="#localidadAplicacionBoton" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@icons/location_azul.png" />
                      </image>
@@ -40,7 +40,7 @@
                      </HBox.margin>
                   </ImageView>
                   <Separator prefWidth="200.0" visible="false" />
-                  <ImageView fitHeight="52.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="52.0" fitWidth="32.0" onMouseClicked="#educacionAplicacionBoton" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@icons/education_azul.png" />
                      </image>
@@ -49,7 +49,7 @@
                      </HBox.margin>
                   </ImageView>
                   <Separator prefWidth="200.0" visible="false" />
-                  <ImageView fitHeight="52.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="52.0" fitWidth="32.0" onMouseClicked="#exitAplicacionBoton" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@icons/logout_azul.png" />
                      </image>
@@ -84,7 +84,7 @@
             <JFXTextField layoutX="89.0" layoutY="256.0" prefHeight="28.0" prefWidth="32.0" promptText="+--" />
             <JFXTextField layoutX="130.0" layoutY="256.0" promptText="Numero celular" />
          </children></AnchorPane>
-      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-sx-text-field: #6b6b6b;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <JFXTextField focusColor="#11eb48" layoutX="81.0" layoutY="18.0" promptText="Ingrese nombre" unFocusColor="#6b6b6b" />
             <JFXTextField focusColor="#11eb48" layoutX="94.0" layoutY="53.0" promptText="Ingrese apellidos" unFocusColor="#6b6b6b" />
@@ -120,7 +120,7 @@
             <JFXRadioButton layoutX="230.0" layoutY="207.0" text="Femenino" textFill="#06f248" />
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label layoutX="14.0" layoutY="14.0" text="INFORMACION ACADEMICA" />
             <Separator layoutX="193.0" layoutY="22.0" opacity="0.21" prefHeight="3.0" prefWidth="170.0" />
@@ -131,10 +131,18 @@
             <JFXToggleButton layoutX="99.0" layoutY="119.0" text="Estudiante" />
             <Separator layoutX="14.0" layoutY="178.0" opacity="0.21" prefHeight="3.0" prefWidth="284.0" />
             <Label layoutX="306.0" layoutY="170.0" text="INTERESES" />
-            <JFXCheckBox layoutX="26.0" layoutY="188.0" text="Americano" />
+            <JFXCheckBox layoutX="31.0" layoutY="205.0" text="Americano" />
+            <JFXCheckBox layoutX="156.0" layoutY="205.0" text="Soccer" />
+            <JFXCheckBox layoutX="262.0" layoutY="205.0" text="Basket ball" />
+            <JFXCheckBox layoutX="31.0" layoutY="242.0" text="Boxeo" />
+            <JFXCheckBox layoutX="156.0" layoutY="242.0" text="Tennis" />
+            <JFXCheckBox layoutX="263.0" layoutY="242.0" text="Baseball" />
+            <JFXCheckBox layoutX="31.0" layoutY="282.0" text="Matematicas" />
+            <JFXCheckBox layoutX="156.0" layoutY="282.0" text="Mecanica" />
+            <JFXCheckBox layoutX="264.0" layoutY="282.0" text="Robotica" />
          </children>
       </AnchorPane>
-      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="56.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="56.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@icons/flecha_arriva_azul.png" />
          </image>
@@ -144,7 +152,7 @@
             <Image url="@icons/flecha_arriva_azul.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="221.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="221.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@icons/flecha_arriva_azul.png" />
          </image>

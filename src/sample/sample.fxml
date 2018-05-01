@@ -62,16 +62,16 @@
             </HBox>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="20.0" layoutY="94.0" prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane fx:id="localidadForm" layoutX="20.0" layoutY="94.0" prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label layoutX="14.0" layoutY="14.0" text="RESIDENCIA" />
             <Separator layoutX="100.0" layoutY="22.0" opacity="0.29" prefHeight="3.0" prefWidth="254.0" />
             <Label layoutX="19.0" layoutY="41.0" text="PAIS:" textFill="WHITE" />
-            <ComboBox layoutX="89.0" layoutY="35.0" prefHeight="28.0" prefWidth="179.0" promptText="Seleccione su pais" />
+            <ComboBox fx:id="paises" layoutX="89.0" layoutY="35.0" prefHeight="28.0" prefWidth="179.0" promptText="Seleccione su pais" />
             <Label layoutX="19.0" layoutY="81.0" text="ESTADO:" textFill="WHITE" />
-            <ComboBox layoutX="89.0" layoutY="75.0" prefHeight="28.0" prefWidth="179.0" promptText="Seleccione su estado" />
+            <ComboBox fx:id="estados" layoutX="89.0" layoutY="75.0" prefHeight="28.0" prefWidth="179.0" promptText="Seleccione su estado" />
             <Label layoutX="20.0" layoutY="124.0" text="CIUDAD:" textFill="WHITE" />
-            <ComboBox layoutX="89.0" layoutY="118.0" prefHeight="28.0" prefWidth="179.0" promptText="Seleccione su ciudad" />
+            <ComboBox fx:id="ciudades" layoutX="89.0" layoutY="118.0" prefHeight="28.0" prefWidth="179.0" promptText="Seleccione su ciudad" />
             <Separator layoutX="14.0" layoutY="166.0" opacity="0.29" prefHeight="3.0" prefWidth="278.0" />
             <Label layoutX="302.0" layoutY="158.0" text="CONTACTO" />
             <Label layoutX="20.0" layoutY="185.0" text="DIRECCION:" textFill="WHITE" />
@@ -84,7 +84,7 @@
             <JFXTextField layoutX="89.0" layoutY="256.0" prefHeight="28.0" prefWidth="32.0" promptText="+--" />
             <JFXTextField layoutX="130.0" layoutY="256.0" promptText="Numero celular" />
          </children></AnchorPane>
-      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane fx:id="usuarioForm" prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <JFXTextField focusColor="#11eb48" layoutX="81.0" layoutY="18.0" promptText="Ingrese nombre" unFocusColor="#6b6b6b" />
             <JFXTextField focusColor="#11eb48" layoutX="94.0" layoutY="53.0" promptText="Ingrese apellidos" unFocusColor="#6b6b6b" />
@@ -120,7 +120,7 @@
             <JFXRadioButton layoutX="230.0" layoutY="207.0" text="Femenino" textFill="#06f248" />
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane fx:id="educacionForm" prefHeight="330.0" prefWidth="386.0" style="-fx-background-color: #07131c;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label layoutX="14.0" layoutY="14.0" text="INFORMACION ACADEMICA" />
             <Separator layoutX="193.0" layoutY="22.0" opacity="0.21" prefHeight="3.0" prefWidth="170.0" />
@@ -142,22 +142,17 @@
             <JFXCheckBox layoutX="264.0" layoutY="282.0" text="Robotica" />
          </children>
       </AnchorPane>
-      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="56.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="flechaUsuario" fitHeight="150.0" fitWidth="20.0" layoutX="56.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@icons/flecha_arriva_azul.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="139.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView fx:id="flechaLocalidad" fitHeight="150.0" fitWidth="20.0" layoutX="139.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@icons/flecha_arriva_azul.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="221.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
-         <image>
-            <Image url="@icons/flecha_arriva_azul.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="304.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <ImageView fx:id="flechaEducacion" fitHeight="150.0" fitWidth="20.0" layoutX="221.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@icons/flecha_arriva_azul.png" />
          </image>
